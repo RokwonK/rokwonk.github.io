@@ -1,0 +1,55 @@
+@import url("../style.css");
+
+#home {
+    background: url('../images/background.jpg') center/cover no-repeat;
+    text-align: center;
+}
+
+.home__back {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    padding-bottom: 0;
+    padding-top: 120px;
+    background-color: rgba(0,0,0,0.5);   
+}
+
+.home__contents{
+    transform: translateY(123px);
+}
+
+.home__avatar {
+    width : 250px;
+    height : 250px;
+    border-radius: 50%;
+    border: 2px solid var(--clolor-light-white);   
+    
+}
+
+.home__title,
+.home__description {
+    color : var(--color-white);
+}
+
+.home__contact {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-bold);
+    margin: 24px;
+    padding: 8px 12px;
+    border : 2px solid var(--color-white);
+    border-radius: var(--size-border-redius);
+    color : var(--color-white);
+}
+
+@media screen and (max-width : 768px) {
+    #home {
+        background: url('../images/background.jpg') left/cover no-repeat;
+    }
+    .home__contents{
+        transform: translateY(73px);
+    }
+    .home__avatar {
+        width: 150px;
+        height : 150px;   
+    }
+}
